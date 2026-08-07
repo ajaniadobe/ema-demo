@@ -1,0 +1,47 @@
+.scores-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 2rem 0;
+  margin: 0;
+}
+
+.scores-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f8f8f8;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  min-width: 160px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.scores-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.scores-number {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #1473e6;
+  line-height: 1;
+}
+
+.scores-label {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .scores-list { gap: 1rem; }
+  .scores-item { min-width: 130px; padding: 1.5rem; }
+  .scores-number { font-size: 3rem; }
+}

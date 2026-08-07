@@ -1,0 +1,40 @@
+.logos {
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.logos-track {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logos-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos-img {
+  height: 40px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.6);
+  transition: filter 0.3s ease, transform 0.2s ease;
+}
+
+.logos-img:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .logos-track { gap: 2rem; }
+  .logos-img { height: 28px; }
+}
