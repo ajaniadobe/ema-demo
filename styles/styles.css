@@ -359,6 +359,15 @@ img {
   height: auto;
 }
 
+/* Inline icons within body text keep their natural size (e.g. the menu-bar charging symbol) */
+picture.inline-icon,
+picture.inline-icon img {
+  display: inline;
+  width: auto;
+  height: 1em;
+  vertical-align: -0.15em;
+}
+
 svg {
   width: 20px;
   height: 20px;
