@@ -1,0 +1,31 @@
+Page: setup-macbook-pro
+Figma source: usqSuHix96AawaH4lUbmO2 / node 1:333 "Desktop - Light Mode"
+Source article: Apple "Set up your MacBook Pro" support guide
+Viewport: 1440px (from migration-plan.json frameWidth)
+
+IMAGES
+  7 total (1 hero + 6 card icons) — currently PLACEHOLDERS.
+  Figma image extraction blocked by sustained account-wide 429 rate limit.
+  All HTML paths wired to ./images/setup-macbook-pro/*; real assets drop in with no HTML change once quota resets.
+  Broken images in preview: 0
+
+STRUCTURE (design vs preview)
+  Section 1  Title + intro + welcome image        default content   MATCH
+  Section 2  Step 1 / Step 2 / Step 3 (+Note/Tip) default content   MATCH
+  Section 3  6 setup-option cards                 card (quiet) x6   MATCH
+             grid: 2 columns -> rendered 704px + 704px, 3 rows      PASS
+             card tops paired: 1509/1509, 2185/2185, 2861/2861      PASS
+  Section 4  What's next? heading + intro + link  default content   MATCH
+
+GEOMETRY
+  hero image box: 1200x729 (content-column width, ~16:10)           PASS
+  cards .block-content: display grid, 2 equal columns               PASS
+  page height: ~3819px                                              consistent w/ tall single-column design
+
+DECORATION
+  All 4 content sections decorate; 0 blocking console errors.
+  (header data: URL scheme warning is boilerplate chrome, not content)
+
+OUTSTANDING
+  Replace 7 placeholder PNGs with real Figma exports when the image
+  service frees up. No structural or layout work remaining.

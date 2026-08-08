@@ -1,0 +1,20 @@
+{
+  "pageName": "setup-macbook-pro",
+  "imageDirectory": "content/images/setup-macbook-pro",
+  "summary": {
+    "totalDiscovered": 7,
+    "totalDownloaded": 0,
+    "totalPlaceholder": 7,
+    "totalMissing": 0
+  },
+  "note": "Figma image extraction blocked by sustained account-wide rate limit (429). Placeholder PNGs generated so page can be assembled/previewed. Swap real assets in once Figma quota resets — HTML paths already wired.",
+  "assets": [
+    { "blockOrder": 1, "figmaNodeId": "1:217", "filename": "macbook-welcome.png", "localPath": "./images/setup-macbook-pro/macbook-welcome.png", "usage": "content-image", "status": "placeholder", "context": "MacBook Pro welcome screen hero image" },
+    { "blockOrder": 3, "figmaNodeId": "1:134", "filename": "icon-setup.png", "localPath": "./images/setup-macbook-pro/icon-setup.png", "usage": "content-image", "status": "placeholder", "context": "Choose how to set up your Mac icon" },
+    { "blockOrder": 3, "figmaNodeId": "1:142", "filename": "icon-accessibility.png", "localPath": "./images/setup-macbook-pro/icon-accessibility.png", "usage": "content-image", "status": "placeholder", "context": "Turn on Accessibility features icon" },
+    { "blockOrder": 3, "figmaNodeId": "1:143", "filename": "icon-wifi.png", "localPath": "./images/setup-macbook-pro/icon-wifi.png", "usage": "content-image", "status": "placeholder", "context": "Connect to a Wi-Fi network icon" },
+    { "blockOrder": 3, "figmaNodeId": "1:162", "filename": "icon-account.png", "localPath": "./images/setup-macbook-pro/icon-account.png", "usage": "content-image", "status": "placeholder", "context": "Create your computer account and password icon" },
+    { "blockOrder": 3, "figmaNodeId": "1:162b", "filename": "icon-apple-account.png", "localPath": "./images/setup-macbook-pro/icon-apple-account.png", "usage": "content-image", "status": "placeholder", "context": "Sign in to your Apple Account icon" },
+    { "blockOrder": 3, "figmaNodeId": "1:162c", "filename": "icon-finish.png", "localPath": "./images/setup-macbook-pro/icon-finish.png", "usage": "content-image", "status": "placeholder", "context": "Finish setting up your Mac icon" }
+  ]
+}

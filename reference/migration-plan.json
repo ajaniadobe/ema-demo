@@ -1,0 +1,69 @@
+{
+  "pageName": "setup-macbook-pro",
+  "sourceTitle": "Set up your MacBook Pro",
+  "sourceUrl": "https://support.apple.com/guide/macbook-pro/set-up-your-mac-apd831707cb3/2026/mac/26",
+  "fileKey": "usqSuHix96AawaH4lUbmO2",
+  "pageNodeId": "1:333",
+  "frameName": "Desktop - Light Mode",
+  "frameWidth": 1440,
+  "status": "completed",
+  "outputPage": "content/setup-macbook-pro.plain.html",
+  "cardVariationAdded": "card.icon (blocks/card/card.css) — constrains small line icons; scoped, does not affect other pages",
+  "imagesPending": "7 placeholder PNGs in place; replace with real Figma exports when image service rate limit clears",
+  "totalBlocks": 4,
+  "blocks": [
+    {
+      "order": 1,
+      "nodeId": "1:214",
+      "figmaName": "Title + Intro + Hero image",
+      "authoring": "default-content",
+      "elements": ["h1: Set up your MacBook Pro", "p: intro", "img: MacBook Pro welcome screen"],
+      "imageNodeId": "1:217",
+      "y": 568,
+      "height": 441,
+      "status": "pending",
+      "hasImages": true,
+      "imageValidation": "pending"
+    },
+    {
+      "order": 2,
+      "nodeId": "1:214,1:203,1:122",
+      "figmaName": "Steps 1-3",
+      "authoring": "default-content",
+      "elements": ["h2: Step 1: Turn on your Mac", "h2: Step 2: Plug in your Mac", "h2: Step 3: Follow the instructions in Setup Assistant", "paragraphs, Note, Tip"],
+      "y": 1079,
+      "height": 764,
+      "status": "pending",
+      "hasImages": false,
+      "imageValidation": "n/a"
+    },
+    {
+      "order": 3,
+      "nodeId": "1:123",
+      "figmaName": "Setup options grid (Table 3x2)",
+      "authoring": "block",
+      "suggestedBlockType": "cards",
+      "suggestedVariantName": "cards",
+      "rowCount": 6,
+      "cellsPerRow": 2,
+      "elements": ["6 cards: icon + heading + description + link"],
+      "y": 1843,
+      "height": 704,
+      "status": "pending",
+      "hasImages": true,
+      "imageValidation": "pending"
+    },
+    {
+      "order": 4,
+      "nodeId": "1:101",
+      "figmaName": "What's next?",
+      "authoring": "default-content",
+      "elements": ["h2: What's next?", "p: intro", "list of links"],
+      "y": 2591,
+      "height": 294,
+      "status": "pending",
+      "hasImages": false,
+      "imageValidation": "n/a"
+    }
+  ]
+}

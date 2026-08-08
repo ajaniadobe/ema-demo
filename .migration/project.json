@@ -1,0 +1,9 @@
+{
+  "sites": {
+    "ema-demo": {
+      "previewOrg": "ajaniadobe",
+      "previewSite": "ema-demo",
+      "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json"
+    }
+  }
+}
