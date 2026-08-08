@@ -1,0 +1,40 @@
+Page: setup-macbook-pro
+Figma source: usqSuHix96AawaH4lUbmO2 / node 1:333 "Desktop - Light Mode"
+Source article: Apple "Set up your MacBook Pro" support guide
+Image source: live Apple support page (Figma image service was rate-limited)
+  https://support.apple.com/guide/macbook-pro/set-up-your-mac-apd831707cb3/2026/mac/26
+Viewport: 1440px (from migration-plan.json frameWidth)
+
+IMAGES  (8 total — all real, downloaded, 0 placeholders)
+  macbook-welcome.png        1064x646  hero              loaded
+  icon-setup.png             104x70    card icon         loaded
+  icon-accessibility.png     70x70     card icon         loaded
+  icon-wifi.png              84x70     card icon         loaded
+  icon-account.png           40x70     card icon         loaded
+  icon-apple-account.png     70x70     card icon         loaded
+  icon-finish.png            54x60     card icon         loaded
+  icon-charging-battery.png  82x60     inline (Step 2)   loaded
+  Broken images in preview: 0
+
+STRUCTURE (design vs preview)
+  Section 1  Title + intro + welcome image        default content   MATCH
+  Section 2  Step 1/2/3 (+inline batt icon, Note, Tip)  default content   MATCH
+  Section 3  6 setup-option cards                 card (quiet icon) x6   MATCH
+             grid: 2 columns, 3 rows                                 PASS
+  Section 4  What's next? heading + intro + link  default content   MATCH
+
+GEOMETRY (rendered boxes)
+  hero image:  1200x729 (content-column width, natural 1064x646)    PASS
+  card icons:  ~40-44px, each at its own aspect ratio               PASS
+  inline batt icon: 22x16 (text-height, sits in sentence)           PASS
+  cards .block-content: display grid, 2 equal columns               PASS
+
+CODE CHANGES (scoped, reusable, no impact on other pages)
+  blocks/card/card.css     added &.icon variation (small icon above heading)
+  styles/styles.css        added picture.inline-icon rule (natural-size inline icons)
+
+DECORATION
+  All 4 content sections decorate; 0 blocking console errors.
+  (header data: URL scheme warning is boilerplate chrome, not content)
+
+STATUS: COMPLETE — real images in place, page matches the design.
