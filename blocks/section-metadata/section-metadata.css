@@ -80,6 +80,10 @@
   &.grid .block-content {
     display: grid;
     gap: var(--gap-spacing);
+
+    /* Keep grids aligned to the content column width instead of the full section */
+    max-width: var(--section-container-width);
+    margin-inline: auto;
   }
 
   &.center {
