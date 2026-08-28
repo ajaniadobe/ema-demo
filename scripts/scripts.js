@@ -39,6 +39,16 @@ const decorateCallouts = (area) => {
   });
 };
 
+// Tag pictures that sit inline within body text (alongside real words) as inline icons
+// so they keep their natural size. Standalone pictures (hero images) are left untouched.
+const decorateInlineIcons = (area) => {
+  area.querySelectorAll('p > picture').forEach((pic) => {
+    const p = pic.parentElement;
+    const hasText = p.textContent.trim().length > 0;
+    if (hasText) pic.classList.add('inline-icon');
+  });
+};
+
 // How to decorate an area before loading it
 const decorateArea = ({ area = document }) => {
   const eagerLoad = (parent, selector) => {
@@ -50,6 +60,7 @@ const decorateArea = ({ area = document }) => {
 
   eagerLoad(area, 'img');
   decorateCallouts(area);
+  decorateInlineIcons(area);
 };
 
 export async function loadPage() {
