@@ -360,13 +360,10 @@ img {
 }
 
 /* Inline icons within body text keep their natural size (e.g. the menu-bar charging symbol).
-   Matches an explicit .inline-icon class, or any picture that shares a paragraph with
-   other content (text/links) — the hero picture is its paragraph's only child, so it is
-   excluded and stays full width. */
+   The .inline-icon class is applied during decoration to any picture that shares a
+   paragraph with real text, so this stays correct regardless of surrounding DOM. */
 picture.inline-icon,
-picture.inline-icon img,
-main p picture:not(:only-child),
-main p picture:not(:only-child) img {
+picture.inline-icon img {
   display: inline;
   width: auto;
   height: 1em;
@@ -376,6 +373,12 @@ main p picture:not(:only-child) img {
 svg {
   width: 20px;
   height: 20px;
+}
+
+/* Welcome hero image sits narrower than the text column, left-aligned, matching the source */
+main picture:has(> img[alt*="Welcome screen"]) img {
+  width: 77%;
+  margin-inline: 0;
 }
 
 /* Tip callout: yellow lightbulb icon before the "Tip:" label */
