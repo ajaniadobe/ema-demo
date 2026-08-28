@@ -1,18 +1,35 @@
-/* Standalone content image. Width is a property of the block, so it can be
-   authored and sized predictably without per-image CSS targeting. */
+/* Image block — a standalone content image with block-controlled sizing.
+   Width and alignment are properties of the block, so authors size an image
+   by choosing variants rather than relying on per-image CSS targeting. */
+
 .image img {
   display: block;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
-/* Narrower variant, left-aligned — e.g. the MacBook welcome image */
+/* --- Width variants --- */
+
+/* Narrower than the content column (e.g. the MacBook welcome image) */
 .image.narrow img {
   width: 77%;
-  margin-inline: 0;
 }
 
-/* Centered variant */
+/* Full section width, ignoring the content column cap */
+.image.full img {
+  width: 100%;
+}
+
+/* --- Alignment variants (default: left) --- */
+
 .image.center img {
   margin-inline: auto;
+}
+
+.image.right img {
+  margin-inline: auto 0;
+}
+
+.image:not(.center, .right) img {
+  margin-inline: 0;
 }
