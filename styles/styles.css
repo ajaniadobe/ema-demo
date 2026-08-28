@@ -359,9 +359,14 @@ img {
   height: auto;
 }
 
-/* Inline icons within body text keep their natural size (e.g. the menu-bar charging symbol) */
+/* Inline icons within body text keep their natural size (e.g. the menu-bar charging symbol).
+   Matches an explicit .inline-icon class, or any picture that shares a paragraph with
+   other content (text/links) — the hero picture is its paragraph's only child, so it is
+   excluded and stays full width. */
 picture.inline-icon,
-picture.inline-icon img {
+picture.inline-icon img,
+main p picture:not(:only-child),
+main p picture:not(:only-child) img {
   display: inline;
   width: auto;
   height: 1em;
@@ -371,6 +376,14 @@ picture.inline-icon img {
 svg {
   width: 20px;
   height: 20px;
+}
+
+/* Tip callout: yellow lightbulb icon before the "Tip:" label */
+main p.callout-tip .callout-label {
+  padding-left: 1.5em;
+  background: url("/img/icons/tip.svg") no-repeat left center;
+  background-size: 1.1em;
+  font-style: normal;
 }
 
 /* @media (width >= 600px) {} */

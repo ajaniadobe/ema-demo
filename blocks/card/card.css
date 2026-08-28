@@ -83,17 +83,30 @@
     }
   }
 
-  /* Small icon above the heading (e.g. documentation setup-option cards) */
+  /* Small icon above the heading (e.g. documentation setup-option cards).
+     card.js moves the icon picture into .card-picture-container, so target that. */
   &.icon {
-    .card-content-container picture {
-      display: block;
+    .card-picture-container {
+      position: static;
+      padding-bottom: 0;
+
+      picture {
+        position: static;
+        display: block;
+      }
+
+      img {
+        width: auto;
+        max-width: 44px;
+        height: auto;
+        object-fit: contain;
+        margin-left: 0;
+      }
     }
 
-    .card-content-container picture img {
-      width: auto;
-      max-width: 44px;
-      height: auto;
-      margin-left: 0;
-    }
+    /* Thin horizontal rule under each card, matching the source layout */
+    border-bottom: 1px solid light-dark(#e6e6e6, var(--color-gray-800));
+    padding-top: var(--spacing-l);
+    padding-bottom: var(--spacing-l);
   }
 }

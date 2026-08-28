@@ -21,6 +21,18 @@ const linkBlocks = [
 // Blocks with self-managed styles
 const components = ['fragment', 'schedule'];
 
+// Tag "Note:" / "Tip:" lead-in paragraphs so they can be styled as callouts
+const decorateCallouts = (area) => {
+  const leads = { note: 'note', tip: 'tip' };
+  area.querySelectorAll('p > em:first-child, p > strong:first-child').forEach((marker) => {
+    const key = marker.textContent.trim().replace(/:$/, '').toLowerCase();
+    const variant = leads[key];
+    if (!variant) return;
+    marker.closest('p').classList.add('callout', `callout-${variant}`);
+    marker.classList.add('callout-label');
+  });
+};
+
 // How to decorate an area before loading it
 const decorateArea = ({ area = document }) => {
   const eagerLoad = (parent, selector) => {
@@ -31,6 +43,7 @@ const decorateArea = ({ area = document }) => {
   };
 
   eagerLoad(area, 'img');
+  decorateCallouts(area);
 };
 
 export async function loadPage() {
