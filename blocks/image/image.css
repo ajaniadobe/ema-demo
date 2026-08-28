@@ -2,6 +2,13 @@
    Width and alignment are properties of the block, so authors size an image
    by choosing variants rather than relying on per-image CSS targeting. */
 
+/* Constrain to the content column (like .default-content) so the image aligns
+   with the surrounding text instead of spanning the full section width. */
+.image {
+  max-width: var(--grid-container-width);
+  margin-inline: auto;
+}
+
 .image img {
   display: block;
   height: auto;
@@ -16,6 +23,10 @@
 }
 
 /* Full section width, ignoring the content column cap */
+.image.full {
+  max-width: none;
+}
+
 .image.full img {
   width: 100%;
 }
