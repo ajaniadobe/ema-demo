@@ -1,0 +1,18 @@
+/* Standalone content image. Width is a property of the block, so it can be
+   authored and sized predictably without per-image CSS targeting. */
+.image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Narrower variant, left-aligned — e.g. the MacBook welcome image */
+.image.narrow img {
+  width: 77%;
+  margin-inline: 0;
+}
+
+/* Centered variant */
+.image.center img {
+  margin-inline: auto;
+}
