@@ -1,6 +1,12 @@
 import { loadArea, setConfig } from './ak.js';
 
-const hostnames = ['authorkit.dev'];
+const hostnames = [
+  'authorkit.dev',
+  // Boilerplate origins left over in content — treat as internal so links
+  // resolve relative to this site instead of being fetched cross-origin.
+  'main--author-kit--aemsites.aem.page',
+  'main--author-kit--aemsites.aem.live',
+];
 
 const locales = {
   '': { lang: 'en' },
