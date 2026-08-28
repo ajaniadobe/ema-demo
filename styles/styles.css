@@ -378,6 +378,12 @@ svg {
   height: 20px;
 }
 
+/* Welcome hero image sits narrower than the text column, left-aligned, matching the source */
+main picture:has(> img[alt*="Welcome screen"]) img {
+  width: 77%;
+  margin-inline: 0;
+}
+
 /* Tip callout: yellow lightbulb icon before the "Tip:" label */
 main p.callout-tip .callout-label {
   padding-left: 1.5em;
