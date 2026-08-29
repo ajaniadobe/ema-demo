@@ -375,13 +375,8 @@ svg {
   height: 20px;
 }
 
-/* Tip callout: yellow lightbulb icon before the "Tip:" label */
-main p.callout-tip .callout-label {
-  padding-left: 1.5em;
-  background: url("/img/icons/tip.svg") no-repeat left center;
-  background-size: 1.1em;
-  font-style: normal;
-}
+/* The Tip lightbulb now comes from the :tip: icon shorthand in content
+   (rendered as an inline SVG), so no background-image icon is needed here. */
 
 /* @media (width >= 600px) {} */
 
