@@ -1,19 +1,20 @@
 {
-  "total": 11,
+  "total": 12,
   "offset": 0,
-  "limit": 11,
+  "limit": 12,
   "data": [
-    { "name": "Advanced Tabs", "path": "/docs/library/blocks/advanced-tabs" },
+    { "name": "Hero", "path": "/docs/library/blocks/hero" },
     { "name": "Card", "path": "/docs/library/blocks/card" },
     { "name": "Columns", "path": "/docs/library/blocks/columns" },
-    { "name": "Hero", "path": "/docs/library/blocks/hero" },
+    { "name": "Table", "path": "/docs/library/blocks/table" },
     { "name": "Image", "path": "/docs/library/blocks/image" },
     { "name": "Image Columns", "path": "/docs/library/blocks/image-columns" },
+    { "name": "Advanced Tabs", "path": "/docs/library/blocks/advanced-tabs" },
     { "name": "Logos", "path": "/docs/library/blocks/logos" },
     { "name": "Scores", "path": "/docs/library/blocks/scores" },
     { "name": "Steps", "path": "/docs/library/blocks/steps" },
-    { "name": "Table", "path": "/docs/library/blocks/table" },
-    { "name": "YouTube", "path": "/docs/library/blocks/youtube" }
+    { "name": "YouTube", "path": "/docs/library/blocks/youtube" },
+    { "name": "Section Metadata", "path": "/docs/library/blocks/section-metadata" }
   ],
   "columns": ["name", "path"],
   ":type": "sheet"
