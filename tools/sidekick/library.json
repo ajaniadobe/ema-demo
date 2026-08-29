@@ -1,0 +1,20 @@
+{
+  "total": 11,
+  "offset": 0,
+  "limit": 11,
+  "data": [
+    { "name": "Advanced Tabs", "path": "/docs/library/blocks/advanced-tabs" },
+    { "name": "Card", "path": "/docs/library/blocks/card" },
+    { "name": "Columns", "path": "/docs/library/blocks/columns" },
+    { "name": "Hero", "path": "/docs/library/blocks/hero" },
+    { "name": "Image", "path": "/docs/library/blocks/image" },
+    { "name": "Image Columns", "path": "/docs/library/blocks/image-columns" },
+    { "name": "Logos", "path": "/docs/library/blocks/logos" },
+    { "name": "Scores", "path": "/docs/library/blocks/scores" },
+    { "name": "Steps", "path": "/docs/library/blocks/steps" },
+    { "name": "Table", "path": "/docs/library/blocks/table" },
+    { "name": "YouTube", "path": "/docs/library/blocks/youtube" }
+  ],
+  "columns": ["name", "path"],
+  ":type": "sheet"
+}

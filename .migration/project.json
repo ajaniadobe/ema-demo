@@ -1,7 +1,7 @@
 {
   "sites": {
     "ema-demo": {
-      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json",
+      "libraryUrl": "https://main--ema-demo--ajaniadobe.aem.page/tools/sidekick/library.json",
       "previewOrg": "ajaniadobe",
       "previewSite": "ema-demo",
       "contentHostUrl": "https://content.da.live/ajaniadobe/ema-demo/"
